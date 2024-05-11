@@ -1,0 +1,90 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Venus-MD session code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url("https://telegra.ph/file/5b781d85f7b5c9b9bb327.jpg"); /* set the background image*/
+      }
+  
+      .btn {
+        --color: #000;
+        --color2: hwb(0 92% 7%);
+        width: 200px;
+        padding: 0.8em 1.75em;
+        background-color: greenyellow;
+        border-radius: 6px;
+        border: .3px solid var(--color);
+        transition: .5s;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        z-index: 1;
+        font-weight: 800;
+        font-size: 17px;
+        
+        background: linear-gradient(45deg, #1317e4);
+        background-size: 400%;
+       
+        animation: steam 20s linear infinite;
+      
+        
+       
+        color: var(--color);
+        
+      }
+  
+      .btn::after, .btn::before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        transform: skew(90deg) translate(-50%, -50%);
+        position: absolute;
+        inset: 50%;
+        left: 25%;
+        z-index: -1;
+        transition: .5s ease-out;
+        background-color: var(--color);
+      }
+  
+      .btn::before {
+        top: -50%;
+        left: -25%;
+        transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+      }
+  
+      .btn:hover::before {
+        transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+      }
+  
+      .btn:hover::after {
+        transform: skew(45deg) translate(-50%, -50%);
+      }
+  
+      .btn:hover {
+        color: var(--color2);
+      }
+  
+      .btn:active {
+        filter: brightness(.7);
+        transform: scale(.98);
+      }
+    </style>
+  </head>
+  <body>
+  <h3>VENUS-MD SESSION CODES</h3>
+    <button onclick="window.open(`/qr`)" class="btn">Scan QR code</button><br>
+    <button onclick="window.open(`/pair`)" class="btn">Pair Code</button><br>
+   
+    <h6 align="center">Powered by Eastern Guru ⓒ2024.</h6>
+  
+  
+  
+  </body></html>
